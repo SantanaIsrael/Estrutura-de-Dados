@@ -21,7 +21,7 @@ public class Pilha<T extends Comparable<T>> extends Lista<T>{
     //Metodo pop que remove um objeto da pilha
     public T pop(){
         if(getSizeList() == 0){
-            System.out.printf("Error in pop method, stack is empty!!!\n\n");
+            System.out.printf("Pilha cheia\n");
             System.exit(-1);
         }
         T v = removeRear();
@@ -31,7 +31,7 @@ public class Pilha<T extends Comparable<T>> extends Lista<T>{
     //Metodo stackTop que retorna o objeto que está no topo da pilha
     public T stackTop(){
         if(getSizeList() == 0){
-            System.out.printf("Error in stackTop method, stack is empty!!!\n\n");
+            System.out.printf("Pilha vazia\n");
             System.exit(-1);
         }
         T temp = pop();
